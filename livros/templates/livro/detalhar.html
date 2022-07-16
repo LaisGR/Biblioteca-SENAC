@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes</title>
+</head>
+
+<body>
+    <h1>{{ livro.titulo }}</h1>
+    <ul>
+        <li>{{ livro.descricao }} </li>
+        <li>{{ livro.editora }} </li>
+        <li>{{ livro.quantidade }} </li>
+        <li>{{ livro.publicacao }} </li>
+        <li>{{ livro.autor }} </li>
+    </ul>
+    <a href="{% url 'livro_atualizar' livro.id %}">Atualizar</a>
+    <a href="{% url 'livro_deletar' livro.id %}">Deletar</a>
+</body>
+
+</html>
