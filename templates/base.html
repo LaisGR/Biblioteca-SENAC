@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <title>Biblioteca SENAC</title>
+
+    {# Load CSS and JavaScript #}
+    
+  </head>
+
+  <body>
+
+    <header>
+      <!-- Fixed navbar -->
+      
+    </header>
+
+    <!-- Begin page content -->
+    
+    <main role="main" class="container">
+      
+      <h1 class="mt-5">Biblioteca SENAC</h1>
+      {% block content %}
+      <a href="{% url 'biblioteca_index' %}">Biblioteca</a>
+      <!-- <p class="lead">O conteudo do site fica aqui.</p> -->
+      {% endblock %}
+    </main>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+  </body>
+</html>
